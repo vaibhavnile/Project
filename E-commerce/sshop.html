@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <section id="header">
+        <a href=""><img src="./logo.png" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a   href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">shop</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="fas fa-times"></i></a>
+            </ul>
+        </div>
+
+        <div id="mobile">
+            <i  id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="prodeatils" class="section-p1">
+        <div class="single-pro-image">
+            <img src="./products/f1.jpg" alt="" width="100%"  id="bimg">
+            <div class="small-group-img">
+                <div class="small-coll">
+                    <img src="./products/f1.jpg" width="100%" alt="" class="simg" >
+                </div>
+                <div class="small-coll">
+                    <img src="./products/f2.jpg" width="100%" alt="" class="simg" >
+                </div>
+                <div class="small-coll">
+                    <img src="./products/f3.jpg" width="100%" alt="" class="simg" >
+                </div>
+                <div class="small-coll">
+                    <img src="./products/f4.jpg" width="100%" alt="" class="simg" >
+                </div>
+            </div>
+        </div>
+
+            <div class="content">
+                <h6>Home/T-shirt</h6>
+                <h4>Men's Fashion shirt</h4>
+                <h2>$139.00</h2>
+                <select name="" id=""  class="select" >
+                    <option value="">select size</option>
+                    <option value="">xl</option>
+                    <option value="">xxl</option>
+                    <option value="">small</option>
+                    <option value="">large</option>
+                    
+                 </select>
+                 <input class="innum" type="number" name="" id="" placeholder="1"><button class="ssbtn">Add To Cart</button>
+
+                 <h3 class="de">Product details</h3>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum minus nulla, quis illum, neque facere saepe ea consequatur explicabo reiciendis assumenda mollitia doloremque dolores, est obcaecati quam fugiat ex consectetur?</p>
+
+           
+        </div>
+    </section>
+
+
+    
+<section id="news"class=" section-p1  section-m1" >
+    <div class="news-box  ">
+        <h3>Sign Up For Newsletters</h3>
+        <p>Get email updates abut our lattest shop and <span>special offer</span> </p>
+    </div>
+        <div class="form">
+           <input type="email" name="" id="input" placeholder="Your email address"><button>sign up</button>
+        </div>
+   
+</section>
+
+<footer class="section-p1">
+<div class="contact details">
+    <img  id="logo"   src="./logo.png" alt="">
+    <h4>Contact</h4>
+   <p><strong>Address:</strong>Lorem ipsum dolor sit amet consectetur . </p>
+   <p><strong>Phone</strong>847876575964</p>
+
+   <div class="follow">
+    <h4>Follow Us</h4>
+    <div class="icon">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-pinterest-p"></i>
+        <i class="fab fa-youtube"></i>
+    </div>
+   </div>
+</div>
+   <div class="about" >
+   
+        <h5>About</h5>
+        <a href="">About us</a>
+        <a href="">Delivery information</a>
+        <a href="">privacy policy</a>
+        <a href="">Terams & conditions</a>
+        <a href="">Contct Us</a>
+   
+   </div>
+
+   
+   <div class="about">
+   
+        <h5>My Account</h5>
+        <a href="">sign in</a>
+        <a href="">view cart</a>
+        <a href="">My whishlist</a>
+        <a href="">Track my order</a>
+        <a href="">Help</a>
+   
+   </div>
+
+   <div class="install">
+            
+    <h5>Install apps</h5>
+
+    <p>From App Store Or Google Pay</p>
+    <img src="./pay/app.jpg" alt="" class="img">
+    <img src="./pay/play.jpg" alt="" class="img">
+    
+
+    <p>Secured payment getways</p>
+
+    <img src="./pay/pay.png" alt="">
+   </div>
+
+<div class="copyright">
+<p>  2021, Vn etc -HTML CSS Ecommerce Template</p>
+</div>
+
+</footer>
+
+<script>
+    let bigimg=document.getElementById("bimg");
+    let simg=document.getElementsByClassName("simg");
+
+    
+    simg[0].addEventListener('click',function(){
+        bigimg.src=simg[0].src;
+    })
+
+    
+    simg[1].addEventListener('click',function(){
+        bigimg.src=simg[1].src;
+    })
+    
+    simg[2].addEventListener('click',function(){
+        bigimg.src=simg[2].src;
+    })
+
+    simg[3].addEventListener('click',function(){
+        bigimg.src=simg[3].src;
+    })
+
+</script>
+<script src="./script.js"></script>
+    
+</body>
+</html>
